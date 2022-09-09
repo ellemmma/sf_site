@@ -12,6 +12,7 @@ def go():
         file_object.write('answer')
         file_object.write("\n")
     return render_template("1.htm")
+print("obnimashki")
 @app.route('/answer', methods=['POST'])
 def nn():
    name = request.form['name']
