@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 
-app = Flask(__name__)
+app = Flask(__name__) #привет, меня можно ревьювить :)
 @app.route("/")
 def go():
     filename = 'programm.csv'
@@ -12,6 +12,7 @@ def go():
         file_object.write('answer')
         file_object.write("\n")
     return render_template("1.htm")
+print("obnimashki")
 @app.route('/answer', methods=['POST'])
 def nn():
    name = request.form['name']
