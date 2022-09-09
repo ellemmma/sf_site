@@ -2,8 +2,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__) #привет, меня можно ревьювить :)
 @app.route("/")
-def go():
-    filename = 'programm.csv'
+def go():    filename = 'programm.csv'
     with open(filename, 'w') as file_object:
         file_object.write('name')
         file_object.write(',')
