@@ -1,6 +1,6 @@
 from flask import Flask, render_template, request
 
-app = Flask(__name__)
+app = Flask(__name__) #привет, меня можно ревьювить :)
 @app.route("/")
 def go():
     filename = 'programm.csv'
